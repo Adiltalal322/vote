@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="vote-container">
+            <div>
+                <div class="form-master-outer">
+                    <h3 class="create-account">Hi Welcome Back!</h3>
+                    <form class="vote-form">
+                        <div>
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" placeholder="Enter your email" type="email" id="email"
+                                name="email" required>
+                        </div>
+                        <div class="password-container">
+                            <label class="form-label" for="password">Password:</label>
+                            <input class="form-input" placeholder="Enter your password" type="password" id="password"
+                                name="password" required>
+                            <i class="material-icons password-icon" id="togglePassword">visibility_off</i>
+                        </div>
+                        <div class="agree-conditions">
+                            <input type="checkbox">
+                            <p>Remember me</p>
+                        </div>
+                        <div class="btn-outer">
+                            <a class="vote-button" type="submit">Login</a>
+                        </div>
+                        <p class="already-account">Dont have an account ? <span class="login-text">Register</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePassword.textContent = 'visibility';
+            } else {
+                passwordInput.type = 'password';
+                togglePassword.textContent = 'visibility_off';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

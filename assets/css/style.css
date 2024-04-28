@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #0B6666;
+    --secondary-color: #6c757d;
+    --light-gray-color: #CECCCC;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vote-container {
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 0 auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    word-break: break-all;
+}
+
+.vote-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bg-vote {
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+.logo-outer {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.vote-slogon {
+    color: White;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.min-vote-slogon {
+    color: var(--light-gray-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.get-started-btn-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.get-started-btn {
+    color: var(--primary-color);
+    background-color: var(--light-gray-color);
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 50%;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.login-slogon {
+    color: var(--light-gray-color);
+    text-align: center;
+    padding-top: 24px;
+}
+
+.login-slogon span {
+    font-weight: 600;
+
+}
+
+.form-master-outer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.create-account {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cast-vote {
+    color: #141414;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.vote-form {
+    margin-top: 30px;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: 1px solid #141414;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    top: 75%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: 1px solid #141414;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+.agree-conditions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.agree-conditions p {
+    font-size: 12px;
+}
+
+.btn-outer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-outer .vote-button {
+    width: 100%;
+    display: inline-block;
+}
+
+.already-account {
+    font-size: 12px;
+    color: #141414;
+    text-align: center;
+}
+
+.login-text {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-left: 3px;
+
+}
+
+
+
+
+/*********election year css of 4th screen **********************/
+.election-year {
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.vote-card {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    height: 200px;
+    margin-top: 30px;
+    padding: 10px;
+    position: relative;
+    color: var(--light-gray-color);
+}
+
+.vote-card-para {
+    max-width: 350px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.president-parent-outer {
+    margin-bottom: 100px;
+}
+
+.card-right-b-img {
+    width: 100%;
+    max-width: 150px;
+    position: absolute;
+    right: 36px;
+    bottom: 0;
+}
+
+.president-grid {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.president-v-president {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.president-grid .vote-card {
+    width: 50%;
+}
+
+.president-v-presiden-head {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.vote-card-president-para {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+/********************presidentialscreen **********************/
+
+
+
+.presidential-header-outer {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.presidential-header {
+    background-color: var(--primary-color);
+    height: 220px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.presidential-header-img {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.presidential-header h3 {
+    color: white;
+    font-size: 32px;
+}
+
+.presidential-candidates {
+    font-size: 32px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.party-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.party-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.party-stamp-logo-outer {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.party-stamp-logo {
+    width: 50px;
+}
+
+
+
+
+/******************************* Confirmation *********************************/
+
+
+.party-card-confirmation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.primary-btn-outer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.primary-btn {
+    padding: 6px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 100px;
+    width: 100px;
+    display: block;
+}
+
+/************************ Biometric *******************************/
+
+
+
+
+.FingerPrint {
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+.finger-print-outer {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.check-print-outer {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.check-print-outer img {
+    background-color: var(--primary-color);
+}
+
+.status-slogon {
+    color: var(--light-gray-color);
+}
+
+.w-400 {
+    width: 150px !important;
+    max-width: 150px;
+    padding: 10px;
+}

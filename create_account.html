@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="vote-container">
+            <div>
+                <div class="form-master-outer">
+                    <h3 class="create-account">Create Account</h3>
+                    <h5 class="cast-vote">Sign Up to Cast your Vote!</h5>
+                    <form class="vote-form">
+                        <div>
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" placeholder="Enter your email" type="email" id="email"
+                                name="email" required>
+                        </div>
+                        <div class="password-container">
+                            <label class="form-label" for="password">Password:</label>
+                            <input class="form-input" placeholder="Enter your password" type="password" id="password"
+                                name="password" required>
+                            <i class="material-icons password-icon" id="togglePassword">visibility_off</i>
+                        </div>
+                        <div>
+                            <label class="form-label" for="firstName">First Name</label>
+                            <input class="form-input" placeholder="Enter your first name" type=" text" id="firstName"
+                                name="firstName" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input class="form-input" placeholder="Enter your phone number" type="tel" id="phone"
+                                name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="agree-conditions">
+                            <input type="checkbox">
+                            <p>I Agree to the terms and conditions</p>
+                        </div>
+                        <div class="btn-outer">
+                            <a class="vote-button" type="submit">Sign up</a>
+                        </div>
+                        <p class="already-account">Already have an account ? <span class="login-text">Login</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePassword.textContent = 'visibility';
+            } else {
+                passwordInput.type = 'password';
+                togglePassword.textContent = 'visibility_off';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
